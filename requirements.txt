@@ -1,5 +1,6 @@
 langchain==0.0.58
 openai
+tiktoken
 faiss-cpu
 streamlit
 streamlit-chat
