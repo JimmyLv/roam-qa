@@ -1,2 +1,0 @@
-[[Paul Graham]]
-
