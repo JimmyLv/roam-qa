@@ -51,7 +51,7 @@ Note that when setting up your StreamLit app you should make sure to add `OPENAI
 
 Export your dataset from Roam Research. You can do this by clicking on the three dots in the upper right hand corner and then clicking `Export`.
 
-<img src="export_roam.png" alt="export" width="200"/>
+<img src="export_roam.png" alt="export" width="500"/>
 
 When exporting, make sure to select the `Markdown & CSV` format option.
 
@@ -76,3 +76,11 @@ Boom! Now you're done, and you can ask it questions like:
 ```shell
 python qa.py "What is the work from home policy"
 ```
+
+## Trouble Shooting
+
+```shell
+openai.error.RateLimitError: Rate limit reached for default-global-with-image-limits in organization org-xxxxxxxxxxxxxxxxxxxx on requests per min. Limit: 60.000000 / min. Current: 70.000000 / min. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.
+```
+
+Maybe you can try to upgrade the account access.

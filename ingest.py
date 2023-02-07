@@ -27,9 +27,11 @@ for i, d in enumerate(data):
     docs.extend(splits)
     metadatas.extend([{"source": sources[i]}] * len(splits))
 
+filtered_docs = list(filter(None, docs))
+print(f"Filter Docs: {filtered_docs}")
 
 # Here we create a vector store from the documents and save it to disk.
-store = FAISS.from_texts(docs, OpenAIEmbeddings(), metadatas=metadatas)
+store = FAISS.from_texts(filtered_docs, OpenAIEmbeddings(), metadatas=metadatas)
 faiss.write_index(store.index, "docs.index")
 store.index = None
 with open("faiss_store.pkl", "wb") as f:
