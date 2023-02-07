@@ -34,10 +34,16 @@ It was downloaded at [[February 7, 2023]] so may have changed slightly since the
 In order to ask a question, run a command like:
 
 ```shell
-python qa.py "What is the work from home policy"
+python qa.py "What's the content of Roam Research's white paper?"
 ```
 
-You can switch out `What is the work from home policy` for any question of your liking!
+<img src="images/roam-qa-example.png" alt="export" width="500"/>
+
+You can switch out `What's the content of Roam Research's white paper?` for any question of your liking!
+
+Of course, OpenAI also supports other languages, such as Chinese:
+
+<img src="images/roam-qa-example-cn.png" alt="export" width="500"/>
 
 This exposes a chat interface for interacting with a Roam Research graph.
 IMO, this is a more natural and convenient interface for getting information.
@@ -51,11 +57,11 @@ Note that when setting up your StreamLit app you should make sure to add `OPENAI
 
 Export your dataset from Roam Research. You can do this by clicking on the three dots in the upper right hand corner and then clicking `Export`.
 
-<img src="export_roam.png" alt="export" width="500"/>
+<img src="images/export_roam.png" alt="export" width="500"/>
 
 When exporting, make sure to select the `Markdown & CSV` format option.
 
-<img src="export_format.png" alt="export-format" width="200"/>
+<img src="images/export_format.png" alt="export-format" width="200"/>
 
 This will produce a `.zip` file in your Downloads folder. Move the `.zip` file into this repository.
 
