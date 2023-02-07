@@ -17,8 +17,8 @@ chain = VectorDBQAWithSourcesChain.from_llm(llm=OpenAI(temperature=0), vectorsto
 
 
 # From here down is all the StreamLit UI.
-st.set_page_config(page_title="Blendle Roam QA Bot", page_icon=":robot:")
-st.header("Blendle Roam QA Bot")
+st.set_page_config(page_title="Roam Research QA Bot", page_icon=":robot:")
+st.header("Roam Research QA Bot")
 
 if "generated" not in st.session_state:
     st.session_state["generated"] = []
@@ -28,7 +28,7 @@ if "past" not in st.session_state:
 
 
 def get_text():
-    input_text = st.text_input("You: ", "Hello, how are you?", key="input")
+    input_text = st.text_input("You: ", "What's the content of Roam Research's white paper?", key="input")
     return input_text
 
 
