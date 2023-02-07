@@ -74,7 +74,7 @@ python ingest.py
 Boom! Now you're done, and you can ask it questions like:
 
 ```shell
-python qa.py "What is the work from home policy"
+python qa.py "What's the content of Roam Research's white paper?"
 ```
 
 ## Trouble Shooting
