@@ -59,7 +59,7 @@ Export your dataset from Roam Research. You can do this by clicking on the three
 
 <img src="images/export_roam.png" alt="export" width="500"/>
 
-When exporting, make sure to select the `Markdown & CSV` format option.
+When exporting, make sure to select the `Flat Markdown` format option.
 
 <img src="images/export_format.png" alt="export-format" width="200"/>
 
